@@ -198,8 +198,7 @@ I am currently working as a software developer at [example org.](https://example
     GPA = "8.78 out of 10.0"
     content = """
 Extracurricular Activities
-  - sdfnskdjfnh
-  - Corrdinated on various conferences. """
+  - Volunteered in various conferences. """
 
       name = "Dev Sanskriti Vishwavidyalaya"
       url = "https://www.dsvv.ac.in/"
