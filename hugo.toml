@@ -76,12 +76,12 @@ animate = true
     [params.hero.bottomImage]
     enable = true
 
-    [params.hero.button]
-    enable = true
-    name = "Resume"
-    url = "#"
-    download = true
-    newPage = false
+    # [params.hero.button]
+    # enable = true
+    # name = "Resume"
+    # url = "#"
+    # download = true
+    # newPage = false
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-github"
