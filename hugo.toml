@@ -100,9 +100,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
   title = "About Me"
   image = "https://avatars.githubusercontent.com/u/117640590?v=4"
   content = """
-I am currently a MCA( Data Science) student with a passionate interest in learning and applying new technologies.
-I have basically worked with various python libraries, 
-and a strong interest in the intersection of technology for solving real-world problems.
+I am a passionate developer who is interested in learning & applying new technologies. I mostly work with python and Deep learning. 
 
 I am currently working on a various Deep CNN related projects."""
 
@@ -255,6 +253,18 @@ Extracurricular Activities
       # icon = "fab fa-github"
       # url = "https://github.com/gurusabarish/converter"
 
+
+
+     [[params.projects.items]]
+    title = "Fresh and Rotten Fruits Classification"
+    content = """Yoga Posture Classifier leveraging Deep CNN and Transfer Learning, integrating
+     state-of-the-art models like MobileNetv3Large, EfficientNetB0, and DenseNet161.An intuitive 
+     web interface with Streamlit for seamless interaction in the realm of Computer Vision."""
+    image = "/images/projects/st_yoga.png"
+    badges = ["TensorFlow","keras"]
+
+
+
     [[params.projects.items]]
     title = "Your Carriers"
     content = """An implementation of robust authentication, seamless job browsing with detailed descriptions, and a user-friendly application 
@@ -293,6 +303,8 @@ Extracurricular Activities
       # [[params.projects.items.links]]
       # icon = "fab fa-github"
       # url = "https://github.com/gurusabarish/HugoProfileV2"
+
+
 
   [params.contact]
   enable = true
