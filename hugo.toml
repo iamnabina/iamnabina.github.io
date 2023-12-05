@@ -255,13 +255,13 @@ Extracurricular Activities
 
 
 
-     [[params.projects.items]]
-    title = "Fresh and Rotten Fruits Classification"
-    content = """Yoga Posture Classifier leveraging Deep CNN and Transfer Learning, integrating
-     state-of-the-art models like MobileNetv3Large, EfficientNetB0, and DenseNet161.An intuitive 
-     web interface with Streamlit for seamless interaction in the realm of Computer Vision."""
-    image = "/images/projects/st_yoga.png"
-    badges = ["TensorFlow","keras"]
+    #  [[params.projects.items]]
+    # title = "Fresh and Rotten Fruits Classification"
+    # content = """Yoga Posture Classifier leveraging Deep CNN and Transfer Learning, integrating
+    #  state-of-the-art models like MobileNetv3Large, EfficientNetB0, and DenseNet161.An intuitive 
+    #  web interface with Streamlit for seamless interaction in the realm of Computer Vision."""
+    # image = "/images/projects/st_yoga.png"
+    # badges = ["TensorFlow","keras"]
 
 
 
