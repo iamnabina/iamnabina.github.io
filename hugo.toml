@@ -272,9 +272,9 @@ Extracurricular Activities
     image = "/images/projects/yourcarriers.png"
     badges = [ "Flask", "MongoDB", "HTML","CSS","JS" ]
 
-      # [params.projects.items.featured]
-      # name = "Demo"
-      # link = "https://hugo-profile.netlify.app"
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://your-carriers.onrender.com"
 
       # [[params.projects.items.links]]
       # icon = "fa fa-envelope"
