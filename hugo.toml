@@ -1,0 +1,319 @@
+# baseURL = "https://hugo-profile.netlify.app"
+languageCode = "en-us"
+title = "Nabina Poudel"
+theme = "hugo-profile"
+Paginate = 3
+enableRobotsTXT = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# [[Menus.main]]
+# identifier = "blog"
+# name = "Blog"
+# title = "Blog posts"
+# url = "/blogs"
+# weight = 1
+
+# [[Menus.main]]
+# identifier = "gallery"
+# name = "Gallery"
+# title = "Blog posts"
+# url = "/gallery"
+# weight = 2
+
+[params]
+title = "Nabina Poudel"
+description = ""
+# favicon = "/fav.png"
+useBootstrapCDN = false
+mathjax = true
+animate = true
+
+  [params.font]
+  fontSize = "1rem"
+  fontWeight = 400
+  lineHeight = 1.5
+  textAlign = "left"
+
+  [params.navbar]
+  align = "ms-auto"
+  brandName = "Nabina Poudel"
+  disableSearch = false
+
+    [params.navbar.stickyNavBar]
+    enable = true
+    showOnScrollUp = true
+
+    [params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableAchievements = false
+    disableContact = false
+
+  [params.hero]
+  enable = true
+  roundImage = true
+  intro = "Hi, my name is"
+  title = "Nabina Poudel"
+  subtitle="Immersed in the Fascinating World of LLMs and AI"
+  # subtitle="Generative AI,RAG, LLMs, Computer Vision & Web Dev"
+  # content="""
+  # A passionate enthusiast deeply immersed in the Python-driven world.
+  # """
+  # subtitle = "I build ML Models and works with other python libraries."
+  
+  # subtitle = "I build things for the web"
+  # content = """A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great,
+  #  feels fantastic, and functions correctly."""
+  image = "https://avatars.githubusercontent.com/u/117640590?v=4"
+
+    [params.hero.bottomImage]
+    enable = true
+
+    # [params.hero.button]
+    # enable = true
+    # name = "Resume"
+    # url = "#"
+    # download = true
+    # newPage = false
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/iamnabina"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/nabinapoudel/"
+
+# [[params.hero.socialLinks.customIcons]]
+# icon = "/fav.png"
+# url = "https://example.com"
+
+  [params.about]
+  enable = true
+  title = "About Me"
+  image = "https://avatars.githubusercontent.com/u/117640590?v=4"
+  content = """
+I am a passionate developer dedicated to learning and applying new technologies .
+
+
+"""
+
+    [params.about.skills]
+    enable = true
+    title = "Skills :"
+    items=["LangChain", "LangGraph", "LLM", "Deep Learning", "TensorFlow", "Python", "Pandas", "Tableau", "Flask", "FAST API", "Responsive Web Design", "Bootstrap", "PHP", "OpenLayers", "MongoDB", "Vector Database", "Weaviate", "MYSQL"]
+    # items = ["LangChain","LangGraph","LLM","Deep Learning","Python","TensorFlow","Flask", "Pandas","OpenLayers","FAST API","Responsive Web Design","Bootstrap","PHP","Tableau","MongoDB","Vector Database","Weaviate","MYSQL"]
+
+  [params.experience]
+  enable = true
+
+    [[params.experience.items]]
+    job = "Software Developer Intern"
+    company = "Uttrakhand State Council For Science & Technology (UCOST)"
+    companyUrl = "https://ucost.uk.gov.in/"
+    date = "Feb 2024 - present"
+    content = "Developed, deployed, and maintained internal software projects to ensure seamless functionality and minimize human intervention. Implemented RAG systems using Generative AI and LLMs like Llama-3.1-8B  for improved data-driven decision-making. Utilized OpenLayers  for advanced GIS map development and integrated solutions using Python , FastAPI , and PHP  for robust back-end support."
+
+      [params.experience.items.featuredLink]
+      enable = false
+      name = "View the project"
+      url = "https://example.com"
+
+#     [[params.experience.items]]
+#     job = "Software Developer"
+#     company = "Amazon"
+#     companyUrl = "https://example.com"
+#     date = "Sep 2020 - Dec 2021"
+#     content = """
+# I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+# - Lead backend developer for a product.
+# - Created a frontend design for a product.
+# """
+
+#       [params.experience.items.featuredLink]
+#       enable = true
+#       url = "https://example.com"
+
+  [params.education]
+  enable = true
+  index = false
+
+
+
+    [[params.education.items]]
+    title = "MCA (Data Science)"
+    date = "2022 - 2024"
+    Grade = "9.0 out of 10.0 (CGPA)"
+    content = """
+    Extracurricular Activities
+    - Volunteered in various conferences. """
+    
+    [params.education.items.school]
+    enable = true
+    name = "Dev Sanskriti Vishwavidyalaya"
+    url = "https://www.dsvv.ac.in/"
+
+
+    [[params.education.items]]
+    title = " Bachelor of Science (Computer Science)"
+    date = "2019 - 2022"
+    Grade = "78.29 %"
+    content = """
+    Extracurricular Activities
+    - KALAM SOCIETY OF PHYSICS (Joint Secretary) 
+    -Led and organized Science workshops, seminars and events.
+    -Coordinated with faculty and students for successful event execution."""
+    
+    [params.education.items.school]
+    enable = true
+    name = "Guru Nanak Dev University, Amritsar"
+    url = "https://online.gndu.ac.in/"
+    
+
+
+    
+
+  # [params.achievements]
+  # enable = false
+
+  #   [[params.achievements.items]]
+  #   title = "Google kickstart runner"
+  #   content = "I solved all problems with optimal solution."
+  #   url = "https://example.com"
+  #   image = "/images/achievment.jpg"
+
+  [params.projects]
+  enable = true
+
+    [[params.projects.items]]
+    title = "GeetaVerse: Intelligent Querying of Bhagavad Gita with LLMs and Vector Database"
+    content = """
+    GeetaVerse leverages the power of LLMs, Llama 3.1 and the Weaviate vector 
+    database to enable intelligent querying of the Bhagavad Gita.
+    Utilizing advanced AI, for performing sophisticated searches and gain deeper insights into the sacred scripture.
+    """
+    image = "/images/projects/geeta-image.jpg"
+    badges = ["RAG","LLM","Weaviate" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://geetaverse.nabinapoudel.com/"
+
+    [[params.projects.items]]
+    title = "Yoga Posture Classification"
+    content = """Yoga Posture Classifier leveraging Deep CNN and Transfer Learning, integrating
+     state-of-the-art models like MobileNetv3Large, EfficientNetB0, and DenseNet161.An intuitive web interface with Streamlit for seamless interaction in the realm of Computer Vision."""
+    image = "/images/projects/yoga_classifier.jpg"
+    badges = ["TensorFlow","keras","Streamlit" ]
+
+      [params.projects.items.featured]
+      # name = "Demo"
+      # link = "https://django-converter.herokuapp.com"
+
+      # [[params.projects.items.links]]
+      # icon = "fab fa-github"
+      # url = "https://github.com/gurusabarish/converter"
+
+
+
+    #  [[params.projects.items]]
+    # title = "Fresh and Rotten Fruits Classification"
+    # content = """Yoga Posture Classifier leveraging Deep CNN and Transfer Learning, integrating
+    #  state-of-the-art models like MobileNetv3Large, EfficientNetB0, and DenseNet161.An intuitive 
+    #  web interface with Streamlit for seamless interaction in the realm of Computer Vision."""
+    # image = "/images/projects/st_yoga.png"
+    # badges = ["TensorFlow","keras"]
+
+
+
+    [[params.projects.items]]
+    title = "Your Carriers"
+    content = """An implementation of robust authentication, seamless job browsing with detailed descriptions, and a user-friendly application 
+    process—including resume uploads— to revolutionize the job-seeking experience."""
+    image = "/images/projects/yourcarriers.png"
+    badges = [ "Flask", "MongoDB", "HTML","CSS","JS" ]
+
+      [params.projects.items.featured]
+      name = "Demo"
+      link = "https://your-carriers.onrender.com"
+
+      # [[params.projects.items.links]]
+      # icon = "fa fa-envelope"
+      # url = "mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f"
+
+      # [[params.projects.items.links]]
+      # icon = "fab fa-github"
+      # url = "https://github.com/gurusabarish/hugo-profile"
+
+      # [[params.projects.items.links]]
+      # icon = "fab fa-twitter"
+      # url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
+
+    
+
+    [[params.projects.items]]
+    title = "Cataloguing System"
+    content = """ Consisting an intuitive admin dashboard for effortless product, category, and user management, ensuring a seamless 
+    and user-friendly experience for product viewing and categorization"""
+    image = "/images/projects/cataloguing.png"
+    badges = [ "Flask", "MongoDB",  "HTML","CSS","JS" ]
+      # [params.projects.items.featured]
+      # name = "Demo V2"
+      # link = "https://hugo-profile-2.netlify.app"
+
+      # [[params.projects.items.links]]
+      # icon = "fab fa-github"
+      # url = "https://github.com/gurusabarish/HugoProfileV2"
+
+
+
+  [params.contact]
+  enable = true
+  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  email = "iamnabinapoudel@gmail.com"
+  btnName = "Mail me"
+
+[params.footer.recentPosts]
+path = "blogs"
+count = 3
+title = "Recent Posts"
+enable = false
+disableFeaturedImage = false
+
+# [params.footer.socialNetworks]
+# github = "https://github.com"
+# linkedin = "https://linkedin.com"
+# twitter = "https://twitter.com"
+# instagram = "https://instagram.com"
+# facebook = "https://facebook.com"
+
+#   [params.listPages]
+#   disableFeaturedImage = false
+
+[params.singlePages.readTime]
+enable = true
+content = "min read"
+
+[params.singlePages.scrollprogress]
+enable = true
+
+  [params.terms]
+  read = "Read"
+  toc = "Table Of Contents"
+  copyright = "All rights reserved"
+  pageNotFound = "Page not found"
+  emailText = "Check out this site"
+
+  [params.datesFormat]
+  article = "Jan 2, 2006"
+  articleList = "Jan 2, 2006"
+  articleRecent = "Jan 2, 2006"
