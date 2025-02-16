@@ -62,7 +62,7 @@ animate = true
   roundImage = true
   intro = "Hi, my name is"
   title = "Nabina Poudel"
-  subtitle="Immersed in the Fascinating World of LLMs and AI"
+  subtitle="Immersed in the evolving world of LLMs and Web Development, driving innovation."
   # subtitle="Generative AI,RAG, LLMs, Computer Vision & Web Dev"
   # content="""
   # A passionate enthusiast deeply immersed in the Python-driven world.
@@ -101,31 +101,51 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
   title = "About Me"
   image = "https://avatars.githubusercontent.com/u/117640590?v=4"
   content = """
-I am a passionate developer dedicated to learning and applying new technologies .
+    I am a passionate developer dedicated to learning and applying new technologies.
+    Leveraging modern web technologies, I build software solutions that look great, 
+    feel fantastic, and function seamlessly.
+    Transforming ideas into impactful solutions is what drives me.
 
 
-"""
+    """
 
     [params.about.skills]
     enable = true
     title = "Skills :"
-    items=["LangChain", "LangGraph", "LLM", "Deep Learning", "TensorFlow", "Python", "Pandas", "Tableau", "Flask", "FAST API", "Responsive Web Design", "Bootstrap", "PHP", "OpenLayers", "MongoDB", "Vector Database", "Weaviate", "MYSQL"]
+    items=["LangChain", "LangGraph", "LLM", "Deep Learning", "TensorFlow", "Python", "Pandas", "Tableau", "Flask", "FAST API", "Responsive Web Design", "JS", "Node.JS", "Express.JS", "Bootstrap", "PHP", "OpenLayers", "MongoDB", "Vector Database", "Weaviate", "MYSQL"]
     # items = ["LangChain","LangGraph","LLM","Deep Learning","Python","TensorFlow","Flask", "Pandas","OpenLayers","FAST API","Responsive Web Design","Bootstrap","PHP","Tableau","MongoDB","Vector Database","Weaviate","MYSQL"]
 
   [params.experience]
   enable = true
 
+  
+  
     [[params.experience.items]]
-    job = "Software Developer Intern"
-    company = "Uttrakhand State Council For Science & Technology (UCOST)"
-    companyUrl = "https://ucost.uk.gov.in/"
-    date = "Feb 2024 - present"
-    content = "Developed, deployed, and maintained internal software projects to ensure seamless functionality and minimize human intervention. Implemented RAG systems using Generative AI and LLMs like Llama-3.1-8B  for improved data-driven decision-making. Utilized OpenLayers  for advanced GIS map development and integrated solutions using Python , FastAPI , and PHP  for robust back-end support."
+    job = "Backend Developer"
+    company = "Studio137 Digital Media Solutions"
+    companyUrl = "https://studio137.co.za/"
+    date = "Oct 2024 - present"
+    content = "Designing and optimizing scalable backend systems to deliver high performance and security. Crafting RESTful APIs with Node.js and Express.js while fine-tuning SQL queries for seamless data retrieval. Enhancing system efficiency by minimizing latency and maximizing resource utilization. Ensuring smooth deployments, keeping high-traffic APIs running with reliability."
+
+
 
       [params.experience.items.featuredLink]
       enable = false
       name = "View the project"
       url = "https://example.com"
+
+
+    [[params.experience.items]]
+    job = "Software Developer Intern"
+    company = "Uttrakhand State Council For Science And Technology"
+    companyUrl = "https://ucost.uk.gov.in/"
+    date = "Feb 2024 - Sept 2024"
+    content = "Developed, deployed, and maintained internal software projects to ensure seamless functionality and minimize human intervention. Implemented RAG systems using Generative AI and LLMs like Llama-3.1-8B  for improved data-driven decision-making. Utilized OpenLayers  for advanced GIS map development and integrated solutions using Python , FastAPI , and PHP  for robust back-end support."
+
+    [params.experience.items.featuredLink]
+    enable = false
+    name = "View the project"
+    url = "https://example.com"
 
 #     [[params.experience.items]]
 #     job = "Software Developer"
