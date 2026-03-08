@@ -12,12 +12,12 @@ page = [ "HTML", "RSS" ]
 [markup.goldmark.renderer]
 unsafe = true
 
-# [[Menus.main]]
-# identifier = "blog"
-# name = "Blog"
-# title = "Blog posts"
-# url = "/blogs"
-# weight = 1
+[[Menus.main]]
+identifier = "blog"
+name = "Posts"
+title = "Posts"
+url = "/blogs"
+weight = 1
 
 # [[Menus.main]]
 # identifier = "gallery"
@@ -299,14 +299,14 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
   [params.contact]
   enable = true
   content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-  email = "iamnabinapoudel@gmail.com"
+  email = "iamnabina@outlook.com"
   btnName = "Mail me"
 
 [params.footer.recentPosts]
 path = "blogs"
 count = 3
 title = "Recent Posts"
-enable = false
+enable = true
 disableFeaturedImage = false
 
 # [params.footer.socialNetworks]
