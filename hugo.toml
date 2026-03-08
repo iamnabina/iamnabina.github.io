@@ -305,7 +305,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
 [params.footer.recentPosts]
 path = "blogs"
 count = 3
-title = "Recent Posts"
+title = "Posts"
 enable = true
 disableFeaturedImage = false
 
