@@ -9,14 +9,16 @@ tags:
   - Kafka
   - Messaging
 image: /images/kafka-intro.png
-description: "Plain-English Kafka: analogies and intuition first, then pub/sub, topics, partitions, and consumer groups—written for curious beginners."
+imageCreditUrl: "https://www.istockphoto.com/photos/kafka"
+imageCreditName: "iStock"
+description: "Kafka in plain English: analogies first, then pub/sub, topics, partitions, and consumer groups—built for curious beginners, not a jargon wall."
 toc: true
 readingTime: 7
 ---
 
 <div class="blog-post-kafka">
 
-<p class="post-deck"><em>Simple stories first, proper names after—topics, partitions, and consumer groups only once the picture in your head feels solid.</em></p>
+<p class="post-deck"><em>“Like you’re 5” here means <strong>make it obvious</strong>—plain language first. We’ll name <strong>topics</strong> <strong>partitions</strong>, and <strong>consumer groups</strong> as soon as the story in your head feels solid.</em></p>
 
 <p class="post-lead">Imagine placing an order on any e-commerce platform. Now imagine hundreds of people doing this at the same time. Each order isn’t a single action, it’s a sequence of steps like applying coupons, checking inventory, processing payment, and sending confirmation. These steps generate events continuously, and if even one is missed, the system breaks.</p>
 
@@ -77,6 +79,7 @@ A **Publish–Subscribe (Pub-Sub)** architecture is a messaging pattern where:
 
 <figure class="post-figure">
 <img src="/images/kafka-pub-sub.png" alt="Diagram: publishers, broker, and subscribers in a pub-sub model" class="kafka-dark-bg" />
+<figcaption class="post-figure-caption text-center small text-muted mt-2">Diagram concept taken from <a href="https://ably.com/topic/pub-sub" rel="noopener noreferrer" target="_blank">Ably — What is Pub/Sub?</a></figcaption>
 </figure>
 
 Kafka works on a **publish–subscribe model**, where producers publish messages and consumers subscribe to what they need. Producers don’t know who the consumers are.
