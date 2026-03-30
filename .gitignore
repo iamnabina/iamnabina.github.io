@@ -1,0 +1,9 @@
+# Hugo build output (regenerate with `hugo` or `hugo server -D`)
+/public/
+
+# Hugo
+.hugo_build.lock
+
+# OS / editor
+.DS_Store
+**/.DS_Store

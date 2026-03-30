@@ -151,7 +151,17 @@
 <script>
   (function() {
     if (typeof mermaid === 'undefined') return;
-    mermaid.initialize({ startOnLoad: false });
+    function mermaidTheme() {
+      try {
+        var pref = localStorage.getItem('pref-theme');
+        if (pref === 'dark') return 'dark';
+        if (pref === 'light') return 'default';
+      } catch (e) {}
+      if (document.body.classList.contains('dark')) return 'dark';
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+      return 'default';
+    }
+    mermaid.initialize({ startOnLoad: false, theme: mermaidTheme() });
     var codes = document.querySelectorAll('code.language-mermaid');
     if (codes.length === 0) return;
     codes.forEach(function(code) {
