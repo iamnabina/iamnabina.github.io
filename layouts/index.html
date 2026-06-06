@@ -1,5 +1,5 @@
 {{ define "head" }}
-<meta name="description" content={{ .Site.Params.description }}>
+<meta name="description" content="{{ .Site.Params.description | default .Site.Title }}">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/index.css" media="all">
 <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
 
@@ -16,7 +16,6 @@
 {{- partial "sections/about.html" . -}}
 {{- partial "sections/posts.html" . -}}
 {{- partial "sections/experience.html" . -}}
-{{- partial "sections/education.html" . -}}
 {{- partial "sections/projects.html" . -}}
 {{- partial "sections/achievements.html" . -}}
 {{- partial "sections/contact.html" . -}}

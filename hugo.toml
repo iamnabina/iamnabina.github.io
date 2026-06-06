@@ -4,6 +4,7 @@ title = "Nabina Poudel"
 theme = "hugo-profile"
 Paginate = 3
 enableRobotsTXT = true
+enableEmoji = true
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
@@ -33,6 +34,7 @@ description = ""
 useBootstrapCDN = false
 mathjax = true
 animate = true
+customCSS = true
 
   [params.font]
   fontSize = "1rem"
@@ -41,7 +43,7 @@ animate = true
   textAlign = "left"
 
   [params.navbar]
-  align = "ms-auto"
+  align = "me-auto"
   brandName = "Nabina Poudel"
   disableSearch = false
 
@@ -60,7 +62,7 @@ animate = true
   [params.hero]
   enable = true
   roundImage = true
-  intro = "Hi, my name is"
+  intro = "Hi 🙋‍♀️! I'm"
   title = "Nabina Poudel"
   subtitle="Immersed in the evolving world of LLMs and Web Development, driving innovation."
   # subtitle="Generative AI,RAG, LLMs, Computer Vision & Web Dev"
@@ -164,7 +166,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
 #       url = "https://example.com"
 
   [params.education]
-  enable = true
+  enable = false
   index = false
 
 
@@ -172,7 +174,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
     [[params.education.items]]
     title = "MCA (Data Science)"
     date = "2022 - 2024"
-    Grade = "9.0 out of 10.0 (CGPA)"
+    GPA = "9.0 out of 10.0 (CGPA)"
     content = """
     Extracurricular Activities
     - Volunteered in various conferences. """
@@ -186,7 +188,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
     [[params.education.items]]
     title = " Bachelor of Science (Computer Science)"
     date = "2019 - 2022"
-    Grade = "78.29 %"
+    GPA = "78.29 %"
     content = """
     Extracurricular Activities
     - KALAM SOCIETY OF PHYSICS (Joint Secretary) 
@@ -306,7 +308,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
 path = "blogs"
 count = 3
 title = "Posts"
-enable = true
+enable = false
 disableFeaturedImage = false
 
 # [params.footer.socialNetworks]

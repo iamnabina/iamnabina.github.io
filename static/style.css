@@ -1,0 +1,660 @@
+/* Custom Styles to Override Theme CSS */
+
+/* Reduce vertical space below hero and above About Me */
+#hero {
+    min-height: 70vh !important;
+}
+
+#about.py-sm-5 {
+    padding-top: 1.5rem !important;
+}
+
+/* Increase spacing between header navigation links on desktop */
+@media (min-width: 992px) {
+    header .navbar .navbar-nav .nav-link {
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+}
+
+
+/* =======================================================
+   Brittany Chiang-Inspired Experience List (Spotlight)
+   ======================================================= */
+
+.experience-section {
+    background-color: transparent !important;
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .experience-section {
+    background-color: transparent !important;
+}
+
+/* List container */
+.experience-list {
+    max-width: 860px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* Individual Experience Card */
+.experience-card {
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: 
+        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+        filter 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+
+/* Spotlight Effect: Dim other cards when list is hovered */
+.experience-list:hover .experience-card:not(:hover) {
+    opacity: 0.5;
+    filter: blur(0.5px);
+}
+
+/* Hovered Card Highlight */
+.experience-card:hover {
+    background-color: color-mix(in srgb, var(--primary-color) 4%, var(--background-color));
+    border-color: color-mix(in srgb, var(--primary-color) 12%, transparent);
+    box-shadow: 0 10px 40px rgba(15, 80, 100, 0.04);
+}
+
+body.dark .experience-card:hover {
+    background-color: color-mix(in srgb, var(--primary-color-dark) 4%, var(--secondary-background-color-dark));
+    border-color: color-mix(in srgb, var(--primary-color-dark) 8%, transparent);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Column: Date range */
+.experience-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary-color);
+    opacity: 0.75;
+    padding-top: 0.25rem;
+    line-height: 1.5;
+}
+
+body.dark .experience-date {
+    color: var(--text-secondary-color-dark);
+}
+
+/* Right Column: Details */
+.experience-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Job Headings */
+.experience-heading {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.role-title {
+    color: var(--text-color);
+}
+
+body.dark .role-title {
+    color: var(--text-color-dark);
+}
+
+.company-separator {
+    color: var(--text-secondary-color);
+    opacity: 0.5;
+}
+
+body.dark .company-separator {
+    color: var(--text-secondary-color-dark);
+}
+
+.company-link {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.company-link:hover {
+    opacity: 0.85;
+}
+
+/* Link Arrow translation */
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.experience-card:hover .arrow-icon {
+    transform: translate(4px, -4px);
+}
+
+/* Description bullet list overrides */
+.experience-body ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1.15rem;
+    list-style: none;
+}
+
+.experience-body ul li {
+    position: relative;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary-color);
+    line-height: 1.6;
+}
+
+body.dark .experience-body ul li {
+    color: var(--text-secondary-color-dark);
+}
+
+.experience-body ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.15rem;
+    font-weight: bold;
+}
+
+.experience-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Tech Badges / Tags */
+.tech-tag {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--primary-color) 8%, transparent);
+    color: var(--primary-color) !important;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 12%, transparent);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+body.dark .tech-tag {
+    background: color-mix(in srgb, var(--primary-color-dark) 10%, transparent);
+    color: var(--primary-color-dark) !important;
+    border-color: color-mix(in srgb, var(--primary-color-dark) 15%, transparent);
+}
+
+.experience-card:hover .tech-tag {
+    background: color-mix(in srgb, var(--primary-color) 14%, transparent);
+    border-color: color-mix(in srgb, var(--primary-color) 25%, transparent);
+}
+
+body.dark .experience-card:hover .tech-tag {
+    background: color-mix(in srgb, var(--primary-color-dark) 16%, transparent);
+    border-color: color-mix(in srgb, var(--primary-color-dark) 30%, transparent);
+}
+
+/* Feature Link Button */
+.featured-link-wrapper .btn {
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+
+/* =======================================================
+   Brittany Chiang-Inspired Education List (Spotlight)
+   ======================================================= */
+
+.education-section {
+    background-color: var(--background-color) !important;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid color-mix(in srgb, var(--primary-color) 10%, transparent);
+}
+
+body.dark .education-section {
+    background-color: var(--background-color-dark) !important;
+    border-top-color: color-mix(in srgb, var(--primary-color-dark) 6%, transparent);
+}
+
+/* List container */
+.education-list {
+    max-width: 860px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+/* Individual Card */
+.education-card {
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    background: transparent;
+    transition: 
+        opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+        filter 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
+}
+
+/* Spotlight Effect */
+.education-list:hover .education-card:not(:hover) {
+    opacity: 0.5;
+    filter: blur(0.5px);
+}
+
+/* Hovered Card Highlight */
+.education-card:hover {
+    background-color: color-mix(in srgb, var(--primary-color) 4%, var(--secondary-background-color));
+    border-color: color-mix(in srgb, var(--primary-color) 12%, transparent);
+    box-shadow: 0 10px 40px rgba(15, 80, 100, 0.04);
+}
+
+body.dark .education-card:hover {
+    background-color: color-mix(in srgb, var(--primary-color-dark) 4%, var(--secondary-background-color-dark));
+    border-color: color-mix(in srgb, var(--primary-color-dark) 8%, transparent);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Date range */
+.education-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-secondary-color);
+    opacity: 0.75;
+    padding-top: 0.25rem;
+    line-height: 1.5;
+}
+
+body.dark .education-date {
+    color: var(--text-secondary-color-dark);
+}
+
+/* Details */
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading */
+.education-heading {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+.degree-title {
+    color: var(--text-color);
+}
+
+body.dark .degree-title {
+    color: var(--text-color-dark);
+}
+
+.school-separator {
+    color: var(--text-secondary-color);
+    opacity: 0.5;
+}
+
+body.dark .school-separator {
+    color: var(--text-secondary-color-dark);
+}
+
+.school-link {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.school-link:hover {
+    opacity: 0.85;
+}
+
+.education-card:hover .school-link .arrow-icon {
+    transform: translate(4px, -4px);
+}
+
+/* GPA / Grade pill */
+.education-gpa {
+    font-size: 0.82rem;
+    margin-top: 0.5rem;
+}
+
+.gpa-label {
+    color: var(--text-secondary-color);
+    font-weight: 700;
+}
+
+body.dark .gpa-label {
+    color: var(--text-secondary-color-dark);
+}
+
+.gpa-value {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    margin-left: 0.35rem;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--primary-color) 8%, transparent);
+    color: var(--primary-color) !important;
+    border: 1px solid color-mix(in srgb, var(--primary-color) 12%, transparent);
+}
+
+body.dark .gpa-value {
+    background: color-mix(in srgb, var(--primary-color-dark) 10%, transparent);
+    color: var(--primary-color-dark) !important;
+    border-color: color-mix(in srgb, var(--primary-color-dark) 15%, transparent);
+}
+
+/* Description list overrides */
+.education-body ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1.15rem;
+    list-style: none;
+}
+
+.education-body ul li {
+    position: relative;
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary-color);
+    line-height: 1.6;
+}
+
+body.dark .education-body ul li {
+    color: var(--text-secondary-color-dark);
+}
+
+.education-body ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1.15rem;
+    font-weight: bold;
+}
+
+.education-body ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .experience-list {
+        gap: 2.5rem;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1.25rem;
+        background-color: color-mix(in srgb, var(--primary-color) 2%, var(--background-color));
+        border-color: color-mix(in srgb, var(--primary-color) 6%, transparent);
+    }
+
+    body.dark .experience-card {
+        background-color: color-mix(in srgb, var(--primary-color-dark) 2%, var(--secondary-background-color-dark));
+        border-color: color-mix(in srgb, var(--primary-color-dark) 4%, transparent);
+    }
+    
+    .experience-list:hover .experience-card:not(:hover) {
+        opacity: 1;
+        filter: none;
+    }
+    
+    .experience-date {
+        font-size: 0.72rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .experience-heading {
+        font-size: 1.1rem;
+    }
+
+    /* Education Responsive Overrides */
+    .education-list {
+        gap: 2.5rem;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        padding: 1.25rem;
+        background-color: color-mix(in srgb, var(--primary-color) 2%, var(--secondary-background-color));
+        border-color: color-mix(in srgb, var(--primary-color) 6%, transparent);
+    }
+
+    body.dark .education-card {
+        background-color: color-mix(in srgb, var(--primary-color-dark) 2%, var(--secondary-background-color-dark));
+        border-color: color-mix(in srgb, var(--primary-color-dark) 4%, transparent);
+    }
+    
+    .education-list:hover .education-card:not(:hover) {
+        opacity: 1;
+        filter: none;
+    }
+    
+    .education-date {
+        font-size: 0.72rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .education-heading {
+        font-size: 1.1rem;
+    }
+}
+
+/* =======================================================
+   Developer Console & Minimal Portrait in Hero Section
+   ======================================================= */
+
+.hero-portrait-stage {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait-card {
+    position: relative;
+    z-index: 1;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none !important;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .portrait-card {
+    border: none !important;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+}
+
+.portrait-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-console {
+    position: absolute;
+    z-index: 2;
+    left: -2.5rem;
+    bottom: -35px;
+    width: min(100%, 23rem);
+    background-color: var(--secondary-color, #f8f9fa);
+    border: 1px solid color-mix(in srgb, var(--primary-color) 12%, transparent);
+    border-radius: 0.75rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark .hero-console {
+    background-color: var(--secondary-color-dark, #1e1e1e);
+    border-color: color-mix(in srgb, var(--primary-color-dark) 12%, transparent);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.32);
+}
+
+.hero-console:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+body.dark .hero-console:hover {
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.45);
+}
+
+/* Console Header */
+.hero-console .console-header {
+    display: flex;
+    align-items: center;
+    padding: 0.65rem 0.9rem;
+    background-color: color-mix(in srgb, var(--primary-color) 4%, var(--secondary-color));
+    border-bottom: 1px solid color-mix(in srgb, var(--primary-color) 8%, transparent);
+    position: relative;
+}
+
+body.dark .hero-console .console-header {
+    background-color: color-mix(in srgb, var(--primary-color-dark) 4%, var(--secondary-color-dark));
+    border-bottom-color: color-mix(in srgb, var(--primary-color-dark) 8%, transparent);
+}
+
+.hero-console .console-dots {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.hero-console .console-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.hero-console .console-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-secondary-color);
+    letter-spacing: 0.02em;
+}
+
+body.dark .hero-console .console-title {
+    color: var(--text-secondary-color-dark);
+}
+
+/* Code area */
+.hero-console .console-code {
+    margin: 0;
+    padding: 1.1rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+    overflow-x: auto;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+body.dark .hero-console .console-code {
+    color: var(--text-color-dark);
+}
+
+/* Syntax Highlighting */
+.code-var {
+    color: #d73a49; /* Pinkish-red variable */
+    font-weight: 600;
+}
+body.dark .code-var {
+    color: #569cd6; /* Blue variable in dark theme */
+}
+
+.code-key {
+    color: #005cc5; /* Blue key strings in light theme */
+}
+body.dark .code-key {
+    color: #9cdcfe; /* Cyan key strings in dark theme */
+}
+
+.code-val {
+    color: #22863a; /* Green value strings in light theme */
+}
+body.dark .code-val {
+    color: #ce9178; /* Soft orange/brown value strings in dark theme */
+}
+
+/* Responsive Overrides for Console Portrait Stage */
+@media (max-width: 991px) {
+    .hero-portrait-stage {
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .portrait-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 264px;
+        height: 264px;
+    }
+    
+    .hero-console {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .portrait-card {
+        width: 216px;
+        height: 216px;
+    }
+    
+    .hero-console {
+        max-width: 290px;
+    }
+    
+    .hero-console .console-code {
+        font-size: 0.76rem !important;
+        padding: 0.9rem !important;
+    }
+}
+

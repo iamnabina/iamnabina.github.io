@@ -77,7 +77,7 @@
 
             <!-- navbar content -->
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
+                <ul class="navbar-nav w-100 {{ .Site.Params.navbar.align | default "ms-auto"}} text-center">
                     {{ if not (.Site.Params.navbar.disableSearch | default false) }}
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
@@ -98,7 +98,7 @@
                     {{ range .Site.Menus.main }}
                     {{ if eq .Identifier "blog" }}
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ if $.IsHome }}{{ $.Site.BaseURL | relURL }}#posts{{ else }}{{ .URL }}{{ end }}" title="{{ .Title }}" aria-label="posts">
+                        <a class="nav-link" href="{{ .URL | relURL }}" title="{{ .Title }}" aria-label="posts">
                             {{ .Name }}
                         </a>
                     </li>
@@ -182,7 +182,7 @@
                     {{end}}
 
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
-                    <li class="nav-item navbar-text">
+                    <li class="nav-item navbar-text ms-lg-auto">
                         <!-- darkmode mode toggle -->
                         <div class="text-center">
                             <button id="theme-toggle">

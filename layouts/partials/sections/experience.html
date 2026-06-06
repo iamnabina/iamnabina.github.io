@@ -1,0 +1,50 @@
+{{ if .Site.Params.experience.enable | default false }}
+<section id="experience" class="py-5 experience-section">
+    <div class="container">
+        <h3 class="section-title text-center mb-5">{{ .Site.Params.experience.title | default "Experience" }}</h3>
+        
+        <!-- Experience Cards -->
+        <div class="experience-list">
+            {{ range $index, $element := .Site.Params.experience.items }}
+            <article class="experience-card d-grid" data-company="{{ .company }}">
+                <!-- Date column (left side) -->
+                <header class="experience-date text-uppercase">
+                    {{ .date }}
+                </header>
+                
+                <!-- Details column (right side) -->
+                <div class="experience-details">
+                    <h4 class="experience-heading">
+                        <span class="role-title">{{ .job }}</span>
+                        <span class="company-separator">&nbsp;&middot;&nbsp;</span>
+                        <a href="{{ .companyUrl }}" target="_blank" rel="noopener noreferrer" class="company-link">
+                            {{ .company }}<span class="arrow-icon">&nbsp;→</span>
+                        </a>
+                    </h4>
+                    
+                    <div class="experience-body mt-2">
+                        {{ .content | markdownify }}
+                    </div>
+
+                    {{ if .tags }}
+                    <div class="experience-tags d-flex flex-wrap gap-2 mt-3">
+                        {{ range .tags }}
+                        <span class="tech-tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    {{ if .featuredLink.enable | default false }}
+                    <div class="mt-3 featured-link-wrapper">
+                        <a class="btn btn-outline-primary btn-sm px-4" href="{{ .featuredLink.url | default "#" }}" target="_blank" rel="noopener noreferrer">
+                            {{ .featuredLink.name | default "Featured Link" }} 
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
