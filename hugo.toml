@@ -109,18 +109,19 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
   title = "About Me"
   image = "https://avatars.githubusercontent.com/u/117640590?v=4"
   content = """
-    I am a passionate developer dedicated to learning and applying new technologies.
-    Leveraging modern web technologies, I build software solutions that look great, 
-    feel fantastic, and function seamlessly.
-    Transforming ideas into impactful solutions is what drives me.
+It’s wonderful that you want to know a bit more about who I am! 👋
 
+My journey in tech started years ago when I saw a computer for the very first time... it felt like magic, and I manifested then and there that I would build things with them. Today, as a software engineer, I am still amazed every single day by the power of technology. 💻
 
-    """
+I love bringing ideas to life through clean code. With a toolkit that spans modern web development, backend systems, and AI integrations, my focus is always on building software that is fast, reliable, and intuitive. For me, the best part of engineering is solving complex puzzles and constantly learning new ways to build things. 🚀
+
+When I’m not at my desk coding, you’ll find me staying active and creative: either flow-sequencing on my yoga mat 🧘‍♀️ (a practice I've loved for over 4 years!), doing pushups, singing with my headphones on 🎧, or getting lost in sketching 🎨.
+"""
 
     [params.about.skills]
     enable = true
     title = "Skills :"
-    items=["LangChain", "LangGraph", "LLM", "Deep Learning", "TensorFlow", "Python", "Pandas", "Tableau", "Flask", "FAST API", "Responsive Web Design", "JS", "Node.JS", "Express.JS", "Bootstrap", "PHP", "OpenLayers", "MongoDB", "Vector Database", "Weaviate", "MYSQL"]
+    items=["System Design", "LangChain", "LangGraph", "LLM", "Deep Learning", "TensorFlow", "Python", "Pandas", "Tableau", "Flask", "FAST API", "Responsive Web Design", "JS", "Node.JS", "Express.JS", "Bootstrap", "PHP", "OpenLayers", "MongoDB", "Vector Database", "Weaviate", "MYSQL", "AWS Services"]
     # items = ["LangChain","LangGraph","LLM","Deep Learning","Python","TensorFlow","Flask", "Pandas","OpenLayers","FAST API","Responsive Web Design","Bootstrap","PHP","Tableau","MongoDB","Vector Database","Weaviate","MYSQL"]
 
   [params.experience]
@@ -129,7 +130,7 @@ url = "https://www.linkedin.com/in/nabinapoudel/"
   
   
     [[params.experience.items]]
-    job = "Backend Developer"
+    job = "AI + Backend Engineer"
     company = "Studio137 Digital Media Solutions"
     companyUrl = "https://studio137.co.za/"
     date = "Oct 2024 - present"

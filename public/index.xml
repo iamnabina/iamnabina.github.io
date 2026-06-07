@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nabina Poudel</title>
-    <link>//localhost:56590/</link>
+    <link>/</link>
     <description>Recent content on Nabina Poudel</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Mar 2026 12:30:00 +0530</lastBuildDate>
-    <atom:link href="//localhost:56590/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Explaining Kafka Like You&#39;re 5</title>
-      <link>//localhost:56590/blogs/kafka/</link>
+      <link>/blogs/kafka/</link>
       <pubDate>Mon, 30 Mar 2026 12:30:00 +0530</pubDate>
-      <guid>//localhost:56590/blogs/kafka/</guid>
+      <guid>/blogs/kafka/</guid>
       <description>&lt;div class=&#34;blog-post-kafka&#34;&gt;&#xA;&lt;p class=&#34;post-deck&#34;&gt;&lt;em&gt;“Like you’re 5” here means &lt;strong&gt;make it obvious&lt;/strong&gt;—plain language first. We’ll name &lt;strong&gt;topics&lt;/strong&gt; &lt;strong&gt;partitions&lt;/strong&gt;, and &lt;strong&gt;consumer groups&lt;/strong&gt; as soon as the story in your head feels solid.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p class=&#34;post-lead&#34;&gt;Imagine placing an order on any e-commerce platform. Now imagine hundreds of people doing this at the same time. Each order isn’t a single action, it’s a sequence of steps like applying coupons, checking inventory, processing payment, and sending confirmation. These steps generate events continuously, and if even one is missed, the system breaks.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cache Strategies in Distributed Systems</title>
-      <link>//localhost:56590/blogs/cache-strategies/</link>
+      <link>/blogs/cache-strategies/</link>
       <pubDate>Sun, 08 Mar 2026 18:47:00 +0530</pubDate>
-      <guid>//localhost:56590/blogs/cache-strategies/</guid>
+      <guid>/blogs/cache-strategies/</guid>
       <description>&lt;p&gt;In this post, we’ll discuss &lt;strong&gt;cache strategies in distributed systems&lt;/strong&gt; and how they help improve system performance and stability.&lt;/p&gt;&#xA;&lt;p&gt;Caching refers to &lt;strong&gt;temporarily storing frequently accessed data in a faster storage layer&lt;/strong&gt; so it can be retrieved more quickly. By avoiding repeated access to the primary data source, caching reduces both &lt;strong&gt;latency&lt;/strong&gt; and &lt;strong&gt;system load&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;A commonly used distributed caching system is &lt;strong&gt;Redis&lt;/strong&gt;, which stores data in memory for extremely fast access.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Thundering Herd Problem in System Design</title>
-      <link>//localhost:56590/blogs/thundering-herd/</link>
+      <link>/blogs/thundering-herd/</link>
       <pubDate>Thu, 05 Mar 2026 18:47:00 +0530</pubDate>
-      <guid>//localhost:56590/blogs/thundering-herd/</guid>
+      <guid>/blogs/thundering-herd/</guid>
       <description>&lt;p&gt;In this post we&amp;rsquo;ll go through the &lt;strong&gt;Thundering Herd Problem&lt;/strong&gt; in system design.&lt;/p&gt;&#xA;&lt;p&gt;Suppose a company is launching a new product and has already created a lot of hype through marketing before the launch. On the &lt;strong&gt;first day of the sale&lt;/strong&gt;, people will be eager to purchase it.&#xA;At their offline store, customers start arriving all at once. Everyone wants to buy the product as soon as possible, which causes a huge rush.&lt;/p&gt;</description>
     </item>
   </channel>

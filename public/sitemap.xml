@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:56590/tags/distributed-systems/</loc>
+    <loc>/tags/distributed-systems/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/blogs/kafka/</loc>
+    <loc>/blogs/kafka/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/kafka/</loc>
+    <loc>/tags/kafka/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/messaging/</loc>
+    <loc>/tags/messaging/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/</loc>
+    <loc>/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/blogs/</loc>
+    <loc>/blogs/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/system-design/</loc>
+    <loc>/tags/system-design/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2026-03-30T12:30:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/blogs/cache-strategies/</loc>
+    <loc>/blogs/cache-strategies/</loc>
     <lastmod>2026-03-08T18:47:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/caching/</loc>
+    <loc>/tags/caching/</loc>
     <lastmod>2026-03-08T18:47:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/tags/performance/</loc>
+    <loc>/tags/performance/</loc>
     <lastmod>2026-03-08T18:47:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/blogs/thundering-herd/</loc>
+    <loc>/blogs/thundering-herd/</loc>
     <lastmod>2026-03-05T18:47:00+05:30</lastmod>
   </url><url>
-    <loc>//localhost:56590/categories/</loc>
+    <loc>/categories/</loc>
   </url>
 </urlset>
