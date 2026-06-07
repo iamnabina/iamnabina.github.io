@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=10166&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56590&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href="/fav.png" type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,15 +28,15 @@
 
 
 
-<meta property="og:url" content="//localhost:10166/blogs/">
+<meta property="og:url" content="//localhost:56590/blogs/">
   <meta property="og:site_name" content="Nabina Poudel">
-  <meta property="og:title" content="Blogs">
+  <meta property="og:title" content="Posts">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Blogs">
+  <meta name="twitter:title" content="Posts">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -46,6 +46,11 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
+<link rel="stylesheet" href="/css/posts-section.css" media="all">
+
+
+
+<link rel="stylesheet" href="/style.css?v=1780826902">
 
 
 <style>
@@ -62,7 +67,7 @@
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #8be9d4;
         --secondary-color-dark: #212529;
     }
     body {
@@ -100,11 +105,11 @@
     }
 </style>
 
-<meta name="description" content="Blogs of Nabina Poudel">
+<meta name="description" content="Posts of Nabina Poudel">
 <link rel="stylesheet" href="/css/list.css" media="all">
 
   <title>
-Blogs | Nabina Poudel
+Posts | Nabina Poudel
 
   </title>
 </head>
@@ -153,7 +158,7 @@ Blogs | Nabina Poudel
         if(resetHeaderStyle) {
             profileHeaderElem.classList.remove("showHeaderOnTop");
         }
-        prevScrollPos = currentScrollPos;        
+        prevScrollPos = currentScrollPos;
     });
 </script>
 
@@ -177,7 +182,7 @@ Blogs | Nabina Poudel
 
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav w-100 me-auto text-center">
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
@@ -188,15 +193,26 @@ Blogs | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:56590/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
                     
 
                     
+                    
+                    
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#experience"
+                        <a class="nav-link" href="/blogs" title="Posts" aria-label="posts">
+                            Posts
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:56590/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -204,17 +220,10 @@ Blogs | Nabina Poudel
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#projects"
+                        <a class="nav-link" href="//localhost:56590/#projects"
                             aria-label="projects">
                             Projects
                         </a>
@@ -225,7 +234,7 @@ Blogs | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#contact"
+                        <a class="nav-link" href="//localhost:56590/#contact"
                             aria-label="contact">
                             Contact
                         </a>
@@ -234,9 +243,11 @@ Blogs | Nabina Poudel
 
                     
                     
+                    
+                    
 
                     
-                    <li class="nav-item navbar-text">
+                    <li class="nav-item navbar-text ms-lg-auto">
                         
                         <div class="text-center">
                             <button id="theme-toggle">
@@ -267,7 +278,7 @@ Blogs | Nabina Poudel
 </header>
 <div id="content">
 <div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Blogs</h2>
+    <h2 class="text-center pb-2">Posts</h2>
     <div class="row">
         
         <div class="col-lg-4 col-md-6 my-3">
@@ -275,26 +286,24 @@ Blogs | Nabina Poudel
                 <div class="card h-100">
                     
                     <div class="card-header">
-                        <a href="/blogs/math/">
-                            <img src="/images/mathjax.png" class="card-img-top" alt="Render Math With Mathjax">
+                        <a href="/blogs/kafka/">
+                            <img src="/images/kafka-intro.png" class="card-img-top" alt="Explaining Kafka Like You&#39;re 5">
                         </a>
                     </div>
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/math/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Render Math With Mathjax">Render Math With Mathjax</h5>
+                        <a href="/blogs/kafka/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Explaining Kafka Like You&#39;re 5">Explaining Kafka Like …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p><h2 id="mathjax">Mathjax</h2>
-<p>Math equations can be rendered using <a href="https://www.mathjax.org">Mathjax</a> syntax with AMS symbol support.</p>
-<p>Optionally enable this on a per-page basis by adding <code>mathjax: true</code> to your frontmatter.</p>
-<p>Then, use <code>$$ ... $$</code> on a line by itself to render a block equation:</p>
-<p>$$ | Pr_{x \leftarrow P_{1}} [A(x) = 1] - Pr_{x \leftarrow …</p></p>
+                            <p><div class="blog-post-kafka">
+<p class="post-deck"><em>“Like you’re 5” here means <strong>make it obvious</strong>—plain language first. We’ll name <strong>topics</strong> <strong>partitions</strong>, and <strong>consumer groups</strong> as soon as the story in your head feels solid.</em></p>
+<p class="post-lead">Imagine placing an order on any e-commerce platform. Now imagine hundreds of people doing this at the same time. Each order isn’t a …</p></div></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 9, 2022</span>
-                        <a href="/blogs/math/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/blogs/kafka/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -305,23 +314,51 @@ Blogs | Nabina Poudel
                 <div class="card h-100">
                     
                     <div class="card-header">
-                        <a href="/blogs/markdown-syntax/">
-                            <img src="/images/post.jpg" class="card-img-top" alt="Markdown Syntax">
+                        <a href="/blogs/cache-strategies/">
+                            <img src="/images/caching-cover.png" class="card-img-top" alt="Cache Strategies in Distributed Systems">
                         </a>
                     </div>
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/blogs/markdown-syntax/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
+                        <a href="/blogs/cache-strategies/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Cache Strategies in Distributed Systems">Cache Strategies in …</h5>
                         </a>
                         <div class="card-text secondary-font">
-                            <p><h2 id="paragraph">Paragraph</h2>
-<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus …</p></p>
+                            <p><p>In this post, we’ll discuss <strong>cache strategies in distributed systems</strong> and how they help improve system performance and stability.</p>
+<p>Caching refers to <strong>temporarily storing frequently accessed data in a faster storage layer</strong> so it can be retrieved more quickly. By avoiding repeated access to the primary …</p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Apr 3, 2021</span>
-                        <a href="/blogs/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Mar 8, 2026</span>
+                        <a href="/blogs/cache-strategies/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-header">
+                        <a href="/blogs/thundering-herd/">
+                            <img src="/images/20260305184747.png" class="card-img-top" alt="The Thundering Herd Problem in System Design">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/blogs/thundering-herd/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="The Thundering Herd Problem in System Design">The Thundering Herd …</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p><p>In this post we&rsquo;ll go through the <strong>Thundering Herd Problem</strong> in system design.</p>
+<p>Suppose a company is launching a new product and has already created a lot of hype through marketing before the launch. On the <strong>first day of the sale</strong>, people will be eager to purchase it.
+At their offline store, …</p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Mar 5, 2026</span>
+                        <a href="/blogs/thundering-herd/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -352,7 +389,7 @@ Blogs | Nabina Poudel
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>

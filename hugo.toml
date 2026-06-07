@@ -36,6 +36,12 @@ mathjax = true
 animate = true
 customCSS = true
 
+  [params.color]
+
+    [params.color.darkmode]
+    primaryColor = "#8be9d4"
+
+
   [params.font]
   fontSize = "1rem"
   fontWeight = 400

@@ -2,7 +2,8 @@
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}" id="primary-font">
+            <div class="col-sm-12 col-md-12 col-lg-8 content {{ if .Site.Params.animate }}animate{{ end }}"
+                id="primary-font">
                 <span class="subtitle">
                     {{ .Site.Params.hero.intro }}
                 </span>
@@ -18,10 +19,9 @@
                 <div class="row">
                     <div class="col-auto h-100">
                         {{ if .Site.Params.hero.button.enable }}
-                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond .Site.Params.hero.button.download "download" "" }}
-			  {{ if .Site.Params.hero.button.newPage | default true }}
-                          target="_blank"
-                          {{ end }}>
+                        <a href="{{ .Site.Params.hero.button.url }}" class="btn" {{ cond
+                            .Site.Params.hero.button.download "download" "" }} {{ if .Site.Params.hero.button.newPage |
+                            default true }} target="_blank" {{ end }}>
                             {{ .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}
@@ -36,19 +36,15 @@
                     <div class="portrait-card">
                         <img src="{{ .Site.Params.hero.image }}" alt="Nabina Poudel">
                     </div>
-                    <div class="hero-console">
-                        <div class="console-header">
-                            <div class="console-dots">
-                                <span class="dot-red"></span>
-                                <span class="dot-yellow"></span>
-                                <span class="dot-green"></span>
-                            </div>
-                            <span class="console-title">current_focus.py</span>
+                    <div class="hero-console mini-console">
+                        <div class="console-top">
+                            <span></span><span></span><span></span>
                         </div>
+                        <p class="console-label">current_focus.py</p>
                         <pre class="console-code"><code><span class="code-var">profile</span> = {
   <span class="code-key">"role"</span>: <span class="code-val">"AI + Backend Engineer"</span>,
-  <span class="code-key">"builds"</span>: [<span class="code-val">"APIs"</span>, <span class="code-val">"RAG systems"</span>, <span class="code-val">"LLM tools"</span>],
-  <span class="code-key">"cares_about"</span>: [<span class="code-val">"latency"</span>, <span class="code-val">"clarity"</span>, <span class="code-val">"usefulness"</span>],
+  <span class="code-key">"builds"</span>: [<span class="code-val">"APIs"</span>, <span class="code-val">"RAG systems"</span>,
+    <span class="code-val">"LLM tools"</span>],
 }</code></pre>
                     </div>
                 </div>

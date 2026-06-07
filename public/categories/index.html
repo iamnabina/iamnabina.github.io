@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=10166&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56590&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href="/fav.png" type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 
 
 
-<meta property="og:url" content="//localhost:10166/categories/">
+<meta property="og:url" content="//localhost:56590/categories/">
   <meta property="og:site_name" content="Nabina Poudel">
   <meta property="og:title" content="Categories">
   <meta property="og:locale" content="en_us">
@@ -46,6 +46,11 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
+<link rel="stylesheet" href="/css/posts-section.css" media="all">
+
+
+
+<link rel="stylesheet" href="/style.css?v=1780826902">
 
 
 <style>
@@ -62,7 +67,7 @@
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #8be9d4;
         --secondary-color-dark: #212529;
     }
     body {
@@ -153,7 +158,7 @@ Categories | Nabina Poudel
         if(resetHeaderStyle) {
             profileHeaderElem.classList.remove("showHeaderOnTop");
         }
-        prevScrollPos = currentScrollPos;        
+        prevScrollPos = currentScrollPos;
     });
 </script>
 
@@ -177,7 +182,7 @@ Categories | Nabina Poudel
 
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav w-100 me-auto text-center">
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
@@ -188,15 +193,26 @@ Categories | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:56590/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
                     
 
                     
+                    
+                    
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#experience"
+                        <a class="nav-link" href="/blogs" title="Posts" aria-label="posts">
+                            Posts
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:56590/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -204,17 +220,10 @@ Categories | Nabina Poudel
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#projects"
+                        <a class="nav-link" href="//localhost:56590/#projects"
                             aria-label="projects">
                             Projects
                         </a>
@@ -225,7 +234,7 @@ Categories | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#contact"
+                        <a class="nav-link" href="//localhost:56590/#contact"
                             aria-label="contact">
                             Contact
                         </a>
@@ -234,9 +243,11 @@ Categories | Nabina Poudel
 
                     
                     
+                    
+                    
 
                     
-                    <li class="nav-item navbar-text">
+                    <li class="nav-item navbar-text ms-lg-auto">
                         
                         <div class="text-center">
                             <button id="theme-toggle">
@@ -295,7 +306,7 @@ Categories | Nabina Poudel
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>

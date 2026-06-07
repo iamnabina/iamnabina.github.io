@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=10166&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56590&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href="/fav.png" type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 
 
 
-<meta property="og:url" content="//localhost:10166/tags/">
+<meta property="og:url" content="//localhost:56590/tags/">
   <meta property="og:site_name" content="Nabina Poudel">
   <meta property="og:title" content="Tags">
   <meta property="og:locale" content="en_us">
@@ -46,6 +46,11 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
+<link rel="stylesheet" href="/css/posts-section.css" media="all">
+
+
+
+<link rel="stylesheet" href="/style.css?v=1780826902">
 
 
 <style>
@@ -62,7 +67,7 @@
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #8be9d4;
         --secondary-color-dark: #212529;
     }
     body {
@@ -153,7 +158,7 @@ Tags | Nabina Poudel
         if(resetHeaderStyle) {
             profileHeaderElem.classList.remove("showHeaderOnTop");
         }
-        prevScrollPos = currentScrollPos;        
+        prevScrollPos = currentScrollPos;
     });
 </script>
 
@@ -177,7 +182,7 @@ Tags | Nabina Poudel
 
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav w-100 me-auto text-center">
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
@@ -188,15 +193,26 @@ Tags | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:56590/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
                     
 
                     
+                    
+                    
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#experience"
+                        <a class="nav-link" href="/blogs" title="Posts" aria-label="posts">
+                            Posts
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:56590/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -204,17 +220,10 @@ Tags | Nabina Poudel
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#projects"
+                        <a class="nav-link" href="//localhost:56590/#projects"
                             aria-label="projects">
                             Projects
                         </a>
@@ -225,7 +234,7 @@ Tags | Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#contact"
+                        <a class="nav-link" href="//localhost:56590/#contact"
                             aria-label="contact">
                             Contact
                         </a>
@@ -234,9 +243,11 @@ Tags | Nabina Poudel
 
                     
                     
+                    
+                    
 
                     
-                    <li class="nav-item navbar-text">
+                    <li class="nav-item navbar-text ms-lg-auto">
                         
                         <div class="text-center">
                             <button id="theme-toggle">
@@ -275,16 +286,16 @@ Tags | Nabina Poudel
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/example/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Example">Example</h5>
+                        <a href="/tags/distributed-systems/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Distributed Systems">Distributed Systems</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 9, 2022</span>
-                        <a href="/tags/example/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/tags/distributed-systems/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -295,16 +306,16 @@ Tags | Nabina Poudel
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/markdown-syntax/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Markdown Syntax">Markdown Syntax</h5>
+                        <a href="/tags/kafka/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Kafka">Kafka</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 9, 2022</span>
-                        <a href="/tags/markdown-syntax/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/tags/kafka/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -315,16 +326,76 @@ Tags | Nabina Poudel
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/mathjax/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Mathjax">Mathjax</h5>
+                        <a href="/tags/messaging/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Messaging">Messaging</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Dec 9, 2022</span>
-                        <a href="/tags/mathjax/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/tags/messaging/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/system-design/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="System Design">System Design</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/tags/system-design/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/caching/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Caching">Caching</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Mar 8, 2026</span>
+                        <a href="/tags/caching/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/performance/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Performance">Performance</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Mar 8, 2026</span>
+                        <a href="/tags/performance/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -333,26 +404,6 @@ Tags | Nabina Poudel
         <div class="row justify-content-center">
             <div class="col-auto m-3">
                 
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
             </div>
         </div>
     </div>
@@ -375,7 +426,7 @@ Tags | Nabina Poudel
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>

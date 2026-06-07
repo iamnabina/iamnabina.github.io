@@ -2,11 +2,11 @@
 <html>
 
 <head>
-	<meta name="generator" content="Hugo 0.134.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=10166&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+	<meta name="generator" content="Hugo 0.159.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56590&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=/fav.png type="image/gif">
+<link rel="icon" href="/fav.png" type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
 
 
 
-<meta property="og:url" content="//localhost:10166/">
+<meta property="og:url" content="//localhost:56590/">
   <meta property="og:site_name" content="Nabina Poudel">
   <meta property="og:title" content="Nabina Poudel">
   <meta property="og:locale" content="en_us">
@@ -47,6 +47,11 @@
 <link rel="stylesheet" href="/css/theme.css" media="all">
 
 
+<link rel="stylesheet" href="/css/posts-section.css" media="all">
+
+
+
+<link rel="stylesheet" href="/style.css?v=1780826902">
 
 
 <style>
@@ -63,7 +68,7 @@
         --text-secondary-color-dark: #b0b3b8;
         --background-color-dark: #18191a;
         --secondary-background-color-dark: #212529;
-        --primary-color-dark: #ffffff;
+        --primary-color-dark: #8be9d4;
         --secondary-color-dark: #212529;
     }
     body {
@@ -101,7 +106,7 @@
     }
 </style>
 
-<meta name="description" content=ZgotmplZ>
+<meta name="description" content="Nabina Poudel">
 <link rel="stylesheet" href="/css/index.css" media="all">
 <link rel="stylesheet" href="/css/projects.css" media="all">
 
@@ -158,7 +163,7 @@ Nabina Poudel
         if(resetHeaderStyle) {
             profileHeaderElem.classList.remove("showHeaderOnTop");
         }
-        prevScrollPos = currentScrollPos;        
+        prevScrollPos = currentScrollPos;
     });
 </script>
 
@@ -182,7 +187,7 @@ Nabina Poudel
 
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
-                <ul class="navbar-nav ms-auto text-center">
+                <ul class="navbar-nav w-100 me-auto text-center">
                     
                         <li class="nav-item navbar-text d-block d-md-none">
                             <div class="nav-link">
@@ -193,15 +198,26 @@ Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#about" aria-label="about">
+                        <a class="nav-link" href="//localhost:56590/#about" aria-label="about">
                             About Me
                         </a>
                     </li>
                     
 
                     
+                    
+                    
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#experience"
+                        <a class="nav-link" href="/blogs" title="Posts" aria-label="posts">
+                            Posts
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="//localhost:56590/#experience"
                             aria-label="experience">
                             Experience
                         </a>
@@ -209,17 +225,10 @@ Nabina Poudel
                     
 
                     
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#education"
-                            aria-label="education">
-                            Education
-                        </a>
-                    </li>
-                    
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#projects"
+                        <a class="nav-link" href="//localhost:56590/#projects"
                             aria-label="projects">
                             Projects
                         </a>
@@ -230,7 +239,7 @@ Nabina Poudel
 
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="//localhost:10166/#contact"
+                        <a class="nav-link" href="//localhost:56590/#contact"
                             aria-label="contact">
                             Contact
                         </a>
@@ -239,9 +248,11 @@ Nabina Poudel
 
                     
                     
+                    
+                    
 
                     
-                    <li class="nav-item navbar-text">
+                    <li class="nav-item navbar-text ms-lg-auto">
                         
                         <div class="text-center">
                             <button id="theme-toggle">
@@ -274,9 +285,10 @@ Nabina Poudel
 <section id="hero" class="py-5 align-middle">
     <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate"
+                id="primary-font">
                 <span class="subtitle">
-                    Hi, my name is
+                    Hi 🙋‍♀️! I&#39;m
                 </span>
                 <h2>
                     Nabina Poudel
@@ -310,13 +322,21 @@ Nabina Poudel
 </span></div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-4">
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
-                        <img src="https://avatars.githubusercontent.com/u/117640590?v=4"
-                            class="img-thumbnail mx-auto rounded-circle"
-                            alt=""
-                        >
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center">
+                <div class="hero-portrait-stage">
+                    <div class="portrait-card">
+                        <img src="https://avatars.githubusercontent.com/u/117640590?v=4" alt="Nabina Poudel">
+                    </div>
+                    <div class="hero-console mini-console">
+                        <div class="console-top">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <p class="console-label">current_focus.py</p>
+                        <pre class="console-code"><code><span class="code-var">profile</span> = {
+  <span class="code-key">"role"</span>: <span class="code-val">"AI + Backend Engineer"</span>,
+  <span class="code-key">"builds"</span>: [<span class="code-val">"APIs"</span>, <span class="code-val">"RAG systems"</span>,
+    <span class="code-val">"LLM tools"</span>],
+}</code></pre>
                     </div>
                 </div>
             </div>
@@ -592,15 +612,7 @@ Nabina Poudel
     <div class="container bg-transparent">
         <h3 class="text-center bg-transparent">About Me</h3>
         <div class="bg-transparent row justify-content-center px-3 py-5">
-            
-            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
-                <div class="image d-flex px-5">
-                    <img src="https://avatars.githubusercontent.com/u/117640590?v=4" class="img-thumbnail mx-auto rounded-circle" alt="">
-                </div>
-            </div>
-            
-
-            <div class="col-sm-12 col-md-12 col-lg-8 content">
+            <div class="col-sm-12 col-md-12 col-lg-10 content">
                 <pre><code>I am a passionate developer dedicated to learning and applying new technologies.
 Leveraging modern web technologies, I build software solutions that look great, 
 feel fantastic, and function seamlessly.
@@ -609,384 +621,309 @@ Transforming ideas into impactful solutions is what drives me.
 
 
                 
-                <h5 class="mt-5">Skills :</h5>
+                <h5 class="mt-5 text-center">Skills :</h5>
                 
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap justify-content-center">
                     
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             LangChain
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             LangGraph
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             LLM
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Deep Learning
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             TensorFlow
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Python
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Pandas
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Tableau
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Flask
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             FAST API
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Responsive Web Design
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             JS
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Node.JS
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Express.JS
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Bootstrap
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             PHP
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             OpenLayers
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             MongoDB
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Vector Database
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             Weaviate
                         </a>
                     </span>
                     
-                    
-                    <span class="float-end m-2">
+                    <span class="m-2">
                         <a class="btn btn-sm">
                             MYSQL
                         </a>
                     </span>
                     
-                    
                 </div>
-
                 
             </div>
 
             
             <style>
-
                 #about a .btn .btn-sm{
-                    
                     text-decoration: none;
                     color: var(--text-color) !important;
                 }
 
                 #about .btn {
-                transition: none;
-                border-radius: .5rem !important;
-                border-color: var(--primary-color) !important;
+                    transition: none;
+                    border-radius: .5rem !important;
+                    border-color: var(--primary-color) !important;
                 }
             </style>
-
-
-            
-            
-
-
-        </div>
-    </div>
-</section>
-
-<section id="experience" class="py-5">
-    <div class="container">
-        <h3 class="text-center">Experience</h3>
-        <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
-                <div class="experience-container px-3 pt-2">
-                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
-                        
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link active bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='Studio137-Digital-Media-Solutions-Oct-2024---present-tab'
-                                data-bs-target='#pills-Studio137-Digital-Media-Solutions-Oct-2024---present'
-                                aria-controls='Studio137-Digital-Media-Solutions-Oct-2024---present' 
-                            >
-                                Studio137 Digital Media Solutions
-                            </div>
-                        </li>
-                        
-                        
-                        
-                        <li class="nav-item px-1 bg-transparent" role="presentation">
-                            <div 
-                                class="nav-link bg-transparent" 
-                                aria-selected="true" 
-                                role="tab" 
-                                data-bs-toggle="pill"
-                                id='Uttrakhand-State-Council-For-Science-And-Technology-Feb-2024---Sept-2024-tab'
-                                data-bs-target='#pills-Uttrakhand-State-Council-For-Science-And-Technology-Feb-2024---Sept-2024' 
-                                aria-controls='Uttrakhand-State-Council-For-Science-And-Technology-Feb-2024---Sept-2024'
-                            >
-                                Uttrakhand State Council For Science And Technology
-                            </div>
-                        </li>
-                        
-                        
-                    </ul>
-                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
-                        
-                        
-                        <div 
-                            class="tab-pane fade show active bg-transparent" 
-                            role="tabpanel"
-                            id='pills-Studio137-Digital-Media-Solutions-Oct-2024---present'
-                            aria-labelledby='pills-Studio137-Digital-Media-Solutions-Oct-2024---present-tab'
-                        >
-                            <div>
-                                <span class="h4">Backend Developer</span>
-                                <small>-</small>
-                                <a href="https://studio137.co.za/" target="_blank">Studio137 Digital Media Solutions</a>
-                                <div class="pb-1">
-                                    <small>Oct 2024 - present</small>
-                                    
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Working&#32;as&#32;a&#32;Backend&#32;Developer&#32;at&#32;Studio137&#32;Digital&#32;Media&#32;Solutions
-                                        >
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
-                                    
-                                </div>
-
-                                
-                            </div>
-
-                            Designing and optimizing scalable backend systems to deliver high performance and security. Crafting RESTful APIs with Node.js and Express.js while fine-tuning SQL queries for seamless data retrieval. Enhancing system efficiency by minimizing latency and maximizing resource utilization. Ensuring smooth deployments, keeping high-traffic APIs running with reliability.
-                        </div>
-                        
-                        
-                        
-                        <div 
-                            class="tab-pane fade bg-transparent" 
-                            role="tabpanel"
-                            id='pills-Uttrakhand-State-Council-For-Science-And-Technology-Feb-2024---Sept-2024'
-                            aria-labelledby='pills-Uttrakhand-State-Council-For-Science-And-Technology-Feb-2024---Sept-2024-tab'
-                        >
-                            <div>
-                                <span class="h4">Software Developer Intern</span>
-                                <small>-</small>
-                                <a href="https://ucost.uk.gov.in/" target="_blank">Uttrakhand State Council For Science And Technology</a>
-                                
-                                <div class="pb-1">
-                                    <small>Feb 2024 - Sept 2024</small>
-                                    
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Software&#32;Developer&#32;Intern&#32;at&#32;Uttrakhand&#32;State&#32;Council&#32;For&#32;Science&#32;And&#32;Technology
-                                        > 
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
-                                    
-                                </div>
-                                
-                                
-                            </div>
-
-                            <div class="pt-2">
-                                Developed, deployed, and maintained internal software projects to ensure seamless functionality and minimize human intervention. Implemented RAG systems using Generative AI and LLMs like Llama-3.1-8B  for improved data-driven decision-making. Utilized OpenLayers  for advanced GIS map development and integrated solutions using Python , FastAPI , and PHP  for robust back-end support.
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
 
 
-<section id="education" class="py-5">
+
+
+
+<section id="posts" class="py-5">
     <div class="container">
-        <h3 class="text-center">Education</h3>
-        <div class="row justify-content-center py-5">
+        <h3 class="text-center">Posts</h3>
+        <div class="row justify-content-center px-3 px-md-5 pt-4">
             
-            
-            <div class="col-12 p-0">
-                <div class="row row align-items-center justify-content-center m-1 mb-4">
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100">
                     
-
-                    <div class="col-md-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="float-end">
-                                    <small>2022 - 2024</small>
-                                </div>
-                                <h5 class="card-title">MCA (Data Science)</h5>
-                                
-                                
-                                <a href="https://www.dsvv.ac.in/" target="_blank">
-                                    <h6>
-                                    Dev Sanskriti Vishwavidyalaya
-                                    </h6>
-                                </a>
-                                
-
-                                
-                                <div class="py-1 education-content">
-                                    <pre><code>Extracurricular Activities
-- Volunteered in various conferences. </code></pre>
-
-                                </div>
-
-                                
-                            </div>
+                    <div class="card-header">
+                        <a href="/blogs/kafka/">
+                            <img src="/images/kafka-intro.png" class="card-img-top" alt="Explaining Kafka Like You&#39;re 5">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3">
+                        <a href="/blogs/kafka/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent mt-1" title="Explaining Kafka Like You&#39;re 5">Explaining Kafka Like …</h5>
+                        </a>
+                        <div class="card-text secondary-font bg-transparent">
+                            <p><div class="blog-post-kafka">
+<p class="post-deck"><em>“Like you’re 5” here means <strong>make it obvious</strong>—plain language first. We’ll name <strong>topics</strong> <strong>partitions</strong>, and <strong>consumer groups</strong> as soon as the story in your head feels solid.</em></p>
+<p class="post-lead">Imagine placing an order on any e-commerce platform. Now imagine hundreds of people doing this at the same time. Each order isn’t a …</p></div></p>
                         </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3 px-3">
+                        <span class="float-start bg-transparent">Mar 30, 2026</span>
+                        <a href="/blogs/kafka/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
             
-            <div class="col-12 p-0">
-                <div class="row row align-items-center justify-content-center m-1 mb-4">
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100">
                     
-
-                    <div class="col-md-9">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="float-end">
-                                    <small>2019 - 2022</small>
-                                </div>
-                                <h5 class="card-title"> Bachelor of Science (Computer Science)</h5>
-                                
-                                
-                                <a href="https://online.gndu.ac.in/" target="_blank">
-                                    <h6>
-                                    Guru Nanak Dev University, Amritsar
-                                    </h6>
-                                </a>
-                                
-
-                                
-                                <div class="py-1 education-content">
-                                    <pre><code>Extracurricular Activities
-- KALAM SOCIETY OF PHYSICS (Joint Secretary) 
--Led and organized Science workshops, seminars and events.
--Coordinated with faculty and students for successful event execution.</code></pre>
-
-                                </div>
-
-                                
-                            </div>
+                    <div class="card-header">
+                        <a href="/blogs/cache-strategies/">
+                            <img src="/images/caching-cover.png" class="card-img-top" alt="Cache Strategies in Distributed Systems">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3">
+                        <a href="/blogs/cache-strategies/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent mt-1" title="Cache Strategies in Distributed Systems">Cache Strategies in …</h5>
+                        </a>
+                        <div class="card-text secondary-font bg-transparent">
+                            <p><p>In this post, we’ll discuss <strong>cache strategies in distributed systems</strong> and how they help improve system performance and stability.</p>
+<p>Caching refers to <strong>temporarily storing frequently accessed data in a faster storage layer</strong> so it can be retrieved more quickly. By avoiding repeated access to the primary …</p></p>
                         </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3 px-3">
+                        <span class="float-start bg-transparent">Mar 8, 2026</span>
+                        <a href="/blogs/cache-strategies/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100">
+                    
+                    <div class="card-header">
+                        <a href="/blogs/thundering-herd/">
+                            <img src="/images/20260305184747.png" class="card-img-top" alt="The Thundering Herd Problem in System Design">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-3">
+                        <a href="/blogs/thundering-herd/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent mt-1" title="The Thundering Herd Problem in System Design">The Thundering Herd …</h5>
+                        </a>
+                        <div class="card-text secondary-font bg-transparent">
+                            <p><p>In this post we&rsquo;ll go through the <strong>Thundering Herd Problem</strong> in system design.</p>
+<p>Suppose a company is launching a new product and has already created a lot of hype through marketing before the launch. On the <strong>first day of the sale</strong>, people will be eager to purchase it.
+At their offline store, …</p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3 px-3">
+                        <span class="float-start bg-transparent">Mar 5, 2026</span>
+                        <a href="/blogs/thundering-herd/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center py-3">
+            <a href="/blogs" class="btn btn-outline-primary">View all posts</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="experience" class="py-5 experience-section">
+    <div class="container">
+        <h3 class="section-title text-center mb-5">Experience</h3>
+        
+        
+        <div class="experience-list">
+            
+            <article class="experience-card d-grid" data-company="Studio137 Digital Media Solutions">
+                
+                <header class="experience-date text-uppercase">
+                    Oct 2024 - present
+                </header>
+                
+                
+                <div class="experience-details">
+                    <h4 class="experience-heading">
+                        <span class="role-title">Backend Developer</span>
+                        <span class="company-separator">&nbsp;&middot;&nbsp;</span>
+                        <a href="https://studio137.co.za/" target="_blank" rel="noopener noreferrer" class="company-link">
+                            Studio137 Digital Media Solutions<span class="arrow-icon">&nbsp;→</span>
+                        </a>
+                    </h4>
+                    
+                    <div class="experience-body mt-2">
+                        Designing and optimizing scalable backend systems to deliver high performance and security. Crafting RESTful APIs with Node.js and Express.js while fine-tuning SQL queries for seamless data retrieval. Enhancing system efficiency by minimizing latency and maximizing resource utilization. Ensuring smooth deployments, keeping high-traffic APIs running with reliability.
+                    </div>
+
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="experience-card d-grid" data-company="Uttrakhand State Council For Science And Technology">
+                
+                <header class="experience-date text-uppercase">
+                    Feb 2024 - Sept 2024
+                </header>
+                
+                
+                <div class="experience-details">
+                    <h4 class="experience-heading">
+                        <span class="role-title">Software Developer Intern</span>
+                        <span class="company-separator">&nbsp;&middot;&nbsp;</span>
+                        <a href="https://ucost.uk.gov.in/" target="_blank" rel="noopener noreferrer" class="company-link">
+                            Uttrakhand State Council For Science And Technology<span class="arrow-icon">&nbsp;→</span>
+                        </a>
+                    </h4>
+                    
+                    <div class="experience-body mt-2">
+                        Developed, deployed, and maintained internal software projects to ensure seamless functionality and minimize human intervention. Implemented RAG systems using Generative AI and LLMs like Llama-3.1-8B  for improved data-driven decision-making. Utilized OpenLayers  for advanced GIS map development and integrated solutions using Python , FastAPI , and PHP  for robust back-end support.
+                    </div>
+
+                    
+
+                    
+                </div>
+            </article>
             
         </div>
     </div>
@@ -1146,7 +1083,7 @@ Transforming ideas into impactful solutions is what drives me.
                     </div>
                     
                     <div class="text-center pt-3">
-                        <a href="mailto:iamnabinapoudel@gmail.com" class="btn">
+                        <a href="mailto:iamnabina@outlook.com" class="btn">
                             Mail me
                         </a>
                     </div>
@@ -1188,7 +1125,7 @@ Transforming ideas into impactful solutions is what drives me.
 </div><div class="container py-4">
     <div class="row justify-content-center">
         <div class="col-md-4 text-center">
-            &copy; 2025  All rights reserved
+            &copy; 2026  All rights reserved
         </div>
     </div>
 </div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
